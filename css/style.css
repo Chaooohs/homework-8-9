@@ -68,7 +68,7 @@ img {
   color: var(--black);
   text-decoration: none;
 }
-.window {
+.screen {
   /* position: relative; */
   width: 100%;
   height: 100vh;
