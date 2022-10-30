@@ -77,7 +77,7 @@ img {
 
 /* #region header */
 
-.navbar-my {
+.navbar-mod {
   position: relative;
   width: 100%;
   background: var(--black) !important;
@@ -85,26 +85,32 @@ img {
   z-index: 1;
   box-sizing: border-box;
 }
-.container-my {
+.container-mod {
   padding: 0;
 }
-.navbar-brand-my {
+.navbar-brand-mod {
   width: 10%;
   padding: 0;
   margin: 0 0 -0.1% 0;
 }
-.navbar-collapse-my {
+.navbar-toggler-mod {
+  color: rgba(255, 255, 255, 0.55) ;
+}
+.navbar-toggler-icon-mod {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-collapse-mod {
   justify-content: flex-end;
 }
-.navbar-nav-my{
+.navbar-nav-mod{
   justify-content: flex-end;
   width: 40%;
   padding-right: 4%;
 }
-.nav-link-my:hover,
-.nav-link-my:active,
-.nav-link-my:focus,
-.nav-link-my {
+.nav-link-mod:hover,
+.nav-link-mod:active,
+.nav-link-mod:focus,
+.nav-link-mod {
   font-family: "Rosario";
   font-style: italic;
   font-weight: 700;
