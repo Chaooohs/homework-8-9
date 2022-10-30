@@ -7,7 +7,7 @@
 /* #region header */
 
 .navbar-mod {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   background: var(--black) !important;
   padding: 0;
@@ -37,7 +37,10 @@
   padding-right: 4%;
 }
 .nav-link-mod:hover,
-.nav-link-mod:active,
+.nav-link-mod:active {
+  color: var(--light);
+  opacity: 80%;
+}
 .nav-link-mod:focus,
 .nav-link-mod {
   font-family: "Rosario";
@@ -47,6 +50,7 @@
   line-height: 4.4rem;
   color: var(--light);
   margin-left: 4% !important;
+  
 }
 
 /* #endregion */
