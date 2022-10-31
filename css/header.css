@@ -33,8 +33,8 @@
 }
 .navbar-nav-mod{
   justify-content: flex-end;
-  width: 40%;
-  padding-right: 4%;
+  width: 100%;
+  padding-right: 1%;
 }
 .nav-link-mod:hover,
 .nav-link-mod:active {
@@ -46,10 +46,10 @@
   font-family: "Rosario";
   font-style: italic;
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 3rem;
   line-height: 4.4rem;
   color: var(--light);
-  margin-left: 4% !important;
+  margin-left: 3.7% !important;
   
 }
 
