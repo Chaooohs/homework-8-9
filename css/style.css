@@ -218,7 +218,7 @@ img {
 }
 .team .card-name {
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   width: 0;
   height: 25%;
   display: flex;
@@ -228,7 +228,7 @@ img {
   overflow: hidden;
   background-color: rgba(163, 83, 10, 0.8);
   border-radius: 0% 0% 11% 11%/0% 0% 22% 22%;
-  transition: width 1s;
+  transition: width 1s ease-in-out;
 }
 .team > .team-card:hover .card-name {
   width: 100%;
