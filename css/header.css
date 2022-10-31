@@ -7,14 +7,12 @@
 /* #region header */
 
 .navbar-mod {
+  position: fixed;
   width: 100%;
   background: var(--black) !important;
   padding: 0;
   z-index: 1;
   box-sizing: border-box;
-}
-.navbar-mod-fix {
-  /* position: fixed; */
 }
 .container-mod {
   padding: 0;
