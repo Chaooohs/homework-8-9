@@ -38,7 +38,7 @@ img {
   line-height: 5.8rem;
   color: var(--black);
 }
-.font-feedback__name {
+.font-form-name {
   font-family: "Volkhov";
   font-weight: 400;
   font-size: 0;
@@ -133,12 +133,11 @@ img {
   justify-content: center;
   width: 50%;
   height: 50%;
-  border: 1px solid black;
   box-sizing: border-box;
   animation: service 8s linear infinite;
 }
 .left > div > div {
-  width: 50%;
+  width: 56%;
   text-align: center;
 }
 
