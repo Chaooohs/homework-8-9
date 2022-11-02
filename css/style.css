@@ -501,10 +501,33 @@ a:hover {
     font-size: 4px !important;
   }
 
+  /* team */
+  .box-team {
+    height: 100%;
+    overflow: visible;
+    padding-bottom: 20%;
+  }
+  .team-title {
+    font-size: 6.6rem;
+    text-align: center;
+    margin: 10% 0;
+  }
+  .team {
+    grid-template-columns: 100%;
+    grid-template-rows: none;
+    row-gap:0;
+  }
+  .team-card {
+    margin-top: 20%;
+  }
+  .team:hover .team-card {
+    filter: none;
+  }
+  
   /* contact */
   .feedback {
     height: 232rem;
-    overflow: inherit;
+    overflow: v;
   }
   .form-box {
     width: 100%;
