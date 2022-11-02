@@ -359,7 +359,7 @@ a:hover{
 @media screen and (min-width: 1920px) {
   html {
     font-size: 10px !important;
-    max-width: 1920px;
+    width: 1920px;
     margin: 0 auto;
     background-color: aqua;
   }

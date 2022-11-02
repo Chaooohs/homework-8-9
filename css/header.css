@@ -8,6 +8,7 @@
 
 .navbar-mod {
   position: fixed;
+  top: 0;
   width: 100%;
   background: var(--black) !important;
   padding: 0;
