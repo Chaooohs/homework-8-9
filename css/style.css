@@ -88,13 +88,13 @@ a:hover{
 .gallery__box-one {
   width: 19%;
   align-self: center;
-  transfeedback: translateX(-100vw);
+  transform: translateX(-100vw);
   animation: box-one 2s linear 1 forwards;
 }
 .gallery__box-four {
   width: 19%;
   align-self: center;
-  transfeedback: translateX(-100vw);
+  transform: translateX(-100vw);
   animation: box-two 2s linear 1 forwards;
 }
 .gallery__box-two {
@@ -102,7 +102,7 @@ a:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transfeedback: translateX(-100vw);
+  transform: translateX(-100vw);
   animation: box-three 1s linear 1 forwards;
 }
 .gallery__box-three {
@@ -110,7 +110,7 @@ a:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transfeedback: translateX(100vw);
+  transform: translateX(100vw);
   animation: box-four 1s linear 1 forwards;
 }
 .gallery__box-two > img:first-child,
