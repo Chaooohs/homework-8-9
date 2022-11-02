@@ -136,7 +136,7 @@ a:hover{
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 50%;
+  height: 55%;
   box-sizing: border-box;
 }
 .left > div > div {
@@ -387,8 +387,27 @@ a:hover{
     font-size: 4px !important;
   }
 
-  /* team */
+  /* services */
   .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .left {
+    width: 80%;
+    height: 50%;
+    align-self: center;
+    order: 2;
+  }
+  .right {
+    width: 100%;
+    height: 50%;
+    background: url("../img/pexels-cottonbro.png") 0 40%/100%  no-repeat;
+    order: 1;
+  }
+
+  /* team */
+  .box-team {
     justify-content: space-evenly;
   }
   .team-title {
