@@ -356,45 +356,29 @@ a:hover{
 
 /* #region media */
 
-@media screen and (min-width: 1280px) {
-  html {
-    font-size: 6px !important;
-  }
-  /* services */
-  .left {
-    align-self: center;
-    height: 70%;
-  }
-  .right {
-    background: url(../img/pexels-cottonbro.png) 50% 0/150% 100% no-repeat;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  html {
-    font-size: 8px !important;
-  }
-  /* services */
-  .left {
-    height: 100%;
-  }
-  .right {
-    background: url(../img/pexels-cottonbro.png) right 0/100% 100% no-repeat;
-  }
-}
-
 @media screen and (min-width: 1920px) {
   html {
     font-size: 10px !important;
-  }
-  /* services */
-  .left {
-    height: 100%;
-  }
-  .right {
-    background: url(../img/pexels-cottonbro.png) right 0/100% 100% no-repeat;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: aqua;
   }
 }
+
+
+@media screen and (max-width: 1686px) {
+  html {
+    font-size: 7px !important;
+  }
+}
+
+
+@media screen and (max-width: 1175px) {
+  html {
+    font-size: 5px !important;
+  } 
+}
+
 
 @media screen and (max-width: 991px) {
   html {
@@ -430,5 +414,34 @@ a:hover{
     order: 3;
   }
 }
+
+
+/* @media screen and (min-width: 1920px) {
+  html {
+    font-size: 10px !important;
+  }
+  .left {
+    height: 100%;
+  }
+  .right {
+    background: url(../img/pexels-cottonbro.png) right 0/100% 100% no-repeat;
+  }
+} */
+
+/* @media screen and (max-width: 1280px) {
+  html {
+    font-size: 6px !important;
+  }
+  
+  .left {
+    align-self: center;
+    height: 70%;
+  }
+  .right {
+    background: url(../img/pexels-cottonbro.png) 50% 0/150% 100% no-repeat;
+  }
+} */
+
+
 
 /* #endregion */
