@@ -20,7 +20,7 @@ body {
 img {
   width: 100%;
 }
-a:hover{
+a:hover {
   color: var(--black);
 }
 
@@ -87,7 +87,9 @@ a:hover{
 /* #region gallery */
 
 .box-gallery {
+  width: 100%;
   display: flex;
+  justify-content: space-evenly;
 }
 .gallery-box-one {
   width: 19%;
@@ -370,20 +372,17 @@ a:hover{
   }
 }
 
-
 @media screen and (max-width: 1686px) {
   html {
     font-size: 7px !important;
   }
 }
 
-
 @media screen and (max-width: 1175px) {
   html {
     font-size: 5px !important;
-  } 
+  }
 }
-
 
 @media screen and (max-width: 991px) {
   html {
@@ -401,36 +400,38 @@ a:hover{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 51% 49%;
-    justify-items: center;
     row-gap: 3%;
     column-gap: 2%;
   }
   .gallery-box-one {
     width: 100%;
     order: 1;
+    animation: box-four 1s linear 1 forwards;
   }
   .gallery-box-two {
     width: 68%;
     justify-self: flex-end;
     order: 3;
+    animation: box-two 0.8s linear 1 forwards;
   }
   .gallery-box-three {
     width: 68%;
     justify-self: flex-start;
     order: 4;
+    animation: box-three 0.8s linear 1 forwards;
   }
   .gallery-box-four {
     width: 100%;
     order: 2;
+    animation: box-one 1s linear 1 forwards;
   }
 
-
   /* services */
-  /* .box {
+  .box-service {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  } */
+  }
   .left {
     width: 80%;
     height: 50%;
@@ -440,7 +441,7 @@ a:hover{
   .right {
     width: 100%;
     height: 50%;
-    background: url("../img/pexels-cottonbro.png") 0 40%/100%  no-repeat;
+    background: url("../img/pexels-cottonbro.png") 0 40%/100% no-repeat;
     order: 1;
   }
 
@@ -495,9 +496,6 @@ a:hover{
   }
 }
 
-
-
-
 /* @media screen and (max-width: 1280px) {
   html {
     font-size: 6px !important;
@@ -511,7 +509,5 @@ a:hover{
     background: url(../img/pexels-cottonbro.png) 50% 0/150% 100% no-repeat;
   }
 } */
-
-
 
 /* #endregion */
