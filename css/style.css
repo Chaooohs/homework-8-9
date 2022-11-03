@@ -506,7 +506,7 @@ a:hover {
     overflow: visible;
   }
   .box-gallery {
-    width: 60%;
+    width: 20%;
     height: 100%;
     grid-template-columns: 100%;
     grid-template-rows: none;
@@ -517,22 +517,29 @@ a:hover {
     width: 100%;
     margin-top: 10%;
   }
+  .gallery-box-two > img:first-child,
+  .gallery-box-three > img:first-child {
+    margin-bottom: 10%;
+  }
   .gallery-box-one {
     order: 1;
+    animation: box-one 0.8s linear 1 forwards;
   }
   .gallery-box-two {
-    order: 3;
+    order: 2;
+    animation: box-two 0.8s linear 1 forwards;
   }
   .gallery-box-three {
-    order: 4;
+    order: 3;
+    animation: box-three 0.8s linear 1 forwards;
   }
   .gallery-box-four {
-    order: 2;
+    order: 4;
+    animation: box-four 0.8s linear 1 forwards;
   }
 
-
   /* serbices */
-  .box-service {   
+  .box-service {
     height: 100vh;
     justify-content: center;
   }
@@ -557,7 +564,7 @@ a:hover {
   .team {
     grid-template-columns: 100%;
     grid-template-rows: none;
-    row-gap:0;
+    row-gap: 0;
   }
   .team-card {
     margin-top: 20%;
@@ -565,7 +572,7 @@ a:hover {
   .team:hover .team-card {
     filter: none;
   }
-  
+
   /* contact */
   .feedback {
     height: 100%;
@@ -624,16 +631,6 @@ a:hover {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 /* @media screen and (max-width: 1280px) {
   html {
     font-size: 6px !important;
@@ -649,7 +646,3 @@ a:hover {
 } */
 
 /* #endregion */
-
-
-
-
