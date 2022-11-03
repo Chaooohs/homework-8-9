@@ -506,7 +506,7 @@ a:hover {
     overflow: visible;
   }
   .box-gallery {
-    width: 20%;
+    width: 25%;
     height: 100%;
     grid-template-columns: 100%;
     grid-template-rows: none;
@@ -630,19 +630,5 @@ a:hover {
     order: 2;
   }
 }
-
-/* @media screen and (max-width: 1280px) {
-  html {
-    font-size: 6px !important;
-  }
-  
-  .left {
-    align-self: center;
-    height: 70%;
-  }
-  .right {
-    background: url(../img/pexels-cottonbro.png) 50% 0/150% 100% no-repeat;
-  }
-} */
 
 /* #endregion */
