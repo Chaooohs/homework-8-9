@@ -500,9 +500,10 @@ a:hover {
   .box {
     height: 100%;
     overflow: visible;
+    padding-bottom: 2%;
   }
   .box-gallery {
-    width: 25%;
+    width: 24%;
     height: 100%;
     grid-template-columns: 100%;
     grid-template-rows: none;
