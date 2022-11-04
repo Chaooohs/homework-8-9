@@ -14,22 +14,7 @@
     transform: translateX(0);
   }
 }
-@keyframes box-three {
-  from {
-    transform: translateX(-100vw);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes box-four {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
+
 
 
 @keyframes services-one {

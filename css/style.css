@@ -94,7 +94,6 @@ a:hover {
 .gallery-box-one {
   width: 19%;
   align-self: center;
-  transform: translateX(-100vw);
   animation: box-one 2s linear 1 forwards;
 }
 .gallery-box-two {
@@ -102,16 +101,14 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateX(-100vw);
-  animation: box-three 1s linear 1 forwards;
+  animation: box-one 1s linear 1 forwards;
 }
 .gallery-box-three {
   width: 24%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateX(100vw);
-  animation: box-four 1s linear 1 forwards;
+  animation: box-two 1s linear 1 forwards;
 }
 .gallery-box-two > img:first-child,
 .gallery-box-three > img:first-child {
@@ -120,7 +117,6 @@ a:hover {
 .gallery-box-four {
   width: 19%;
   align-self: center;
-  transform: translateX(-100vw);
   animation: box-two 2s linear 1 forwards;
 }
 
@@ -405,7 +401,7 @@ a:hover {
   .gallery-box-one {
     width: 100%;
     order: 1;
-    animation: box-four 1s linear 1 forwards;
+    animation: box-two 1s linear 1 forwards;
   }
   .gallery-box-two {
     width: 68%;
@@ -417,7 +413,7 @@ a:hover {
     width: 68%;
     justify-self: flex-start;
     order: 4;
-    animation: box-three 0.8s linear 1 forwards;
+    animation: box-one 0.8s linear 1 forwards;
   }
   .gallery-box-four {
     width: 100%;
@@ -519,7 +515,12 @@ a:hover {
   }
   .gallery-box-two > img:first-child,
   .gallery-box-three > img:first-child {
+    animation: box-two 0.8s linear 1 forwards;
     margin-bottom: 10%;
+  }
+  .gallery-box-two > img:last-child,
+  .gallery-box-three > img:last-child {
+    animation: box-one 0.8s linear 1 forwards;
   }
   .gallery-box-one {
     order: 1;
@@ -527,15 +528,15 @@ a:hover {
   }
   .gallery-box-two {
     order: 2;
-    animation: box-two 0.8s linear 1 forwards;
+    animation: none;
   }
   .gallery-box-three {
     order: 3;
-    animation: box-three 0.8s linear 1 forwards;
+    animation: none;
   }
   .gallery-box-four {
     order: 4;
-    animation: box-four 0.8s linear 1 forwards;
+    animation: box-two 0.8s linear 1 forwards;
   }
 
   /* serbices */
