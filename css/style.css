@@ -12,7 +12,7 @@
   --gray: #e5e5e5;
 }
 html {
-  font-size: 10px !important;
+  font-size: 16px !important;
 }
 body {
   margin: 0;
@@ -361,7 +361,7 @@ a:hover {
 
 @media screen and (min-width: 1920px) {
   html {
-    font-size: 10px !important;
+    font-size: 16px !important;
     width: 1920px;
     margin: 0 auto;
   }
@@ -369,19 +369,19 @@ a:hover {
 
 @media screen and (max-width: 1686px) {
   html {
-    font-size: 7px !important;
+    font-size: 16px !important;
   }
 }
 
 @media screen and (max-width: 1175px) {
   html {
-    font-size: 5px !important;
+    font-size: 16px !important;
   }
 }
 
 @media screen and (max-width: 991px) {
   html {
-    font-size: 4px !important;
+    font-size: 16px !important;
   }
 
   /* gallery */
