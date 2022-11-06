@@ -28,11 +28,14 @@ a:hover {
 
 .box {
   width: 100%;
-  min-height: 90vh;
+  /* min-height: 90vh; */
   display: flex;
   justify-content: space-evenly;
   box-sizing: border-box;
   background-color: var(--light);
+  /* //////// */
+  min-height: 100vh;
+  padding-top: 10vh;
 }
 .font-large {
   font-family: "Rosario";
@@ -85,6 +88,7 @@ a:hover {
 /* #region gallery */
 
 .gallery-box-one {
+  background-color: red;
   width: 19%;
   align-self: center;
   animation: box-one 2s linear 1 forwards;
@@ -174,6 +178,7 @@ a:hover {
 /* #region section team */
 
 .box-team {
+  background-color: green;
   flex-direction: column;
   align-items: center;
 }
@@ -243,6 +248,7 @@ a:hover {
 /* #region section contact */
 
 .box-contact {
+  background-color: brown;
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
@@ -376,6 +382,12 @@ a:hover {
     margin-left: 5%;
     font-size: 6rem;
   }
+  .nav-link {
+    font-size: 3.2rem;
+    line-height: 4.7rem;
+    margin-left: 7%;
+    margin-bottom: 3%;
+  }
 
   /* gallery */
   .box-gallery {
@@ -386,7 +398,6 @@ a:hover {
     /* row-gap: 3%; */
     column-gap: 2%;
     margin: 0 auto;
-    padding-top: 5%;
   }
   .gallery-box-one {
     width: 100%;
@@ -489,7 +500,11 @@ a:hover {
   /* navbar */
   .navbar-toggler {
     font-size: 3rem;
-  } 
+  }
+  .nav-link {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+  }
 
   /* gallery */
   .box-gallery {
@@ -497,7 +512,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: normal;
-    padding: 0;
   }
   .box-gallery > div {
     width: 100%;
@@ -572,11 +586,6 @@ a:hover {
   }
 
   /* contact */
-  .feedback {
-    height: 100%;
-    overflow: visible;
-    padding-top: 10%;
-  }
   .form-box {
     width: 100%;
     margin: 0 0 0 0;

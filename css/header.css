@@ -6,7 +6,8 @@
 /* #region header */
 
 .navbar {
-  position: sticky;
+  /* position: sticky; */
+  position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
@@ -22,10 +23,6 @@
 .navbar-brand > img {
   height: 102%;
 }
-/* .navbar-toggler {
-  margin-right: 5% !important;
-  font-size: 6rem !important;
-} */
 .navbar-dark .navbar-nav .nav-link {
   color: var(--light);
 }
