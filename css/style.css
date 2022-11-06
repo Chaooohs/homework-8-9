@@ -71,16 +71,6 @@ a:hover {
   color: var(--black);
   text-decoration: none;
 }
-.box {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-  box-sizing: border-box;
-  overflow: hidden;
-  background-color: var(--light);
-  padding-top: 5%;
-}
 
 /* #endregion */
 
@@ -88,8 +78,13 @@ a:hover {
 
 .box-gallery {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--light);
+  padding-top: 6%;
 }
 .gallery-box-one {
   width: 19%;
