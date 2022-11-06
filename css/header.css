@@ -15,11 +15,12 @@
 .bg-dark {
   background: var(--black) !important;
 }
-.navbar-logo {
-  width: 11.6%
-}
-.navbar-logo > img {
+.navbar-brand {
+  padding: 0;
   height: 10vh;
+}
+.navbar-brand > img {
+  height: 102%;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: var(--light);
