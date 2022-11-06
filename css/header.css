@@ -22,6 +22,10 @@
 .navbar-brand > img {
   height: 102%;
 }
+/* .navbar-toggler {
+  margin-right: 5% !important;
+  font-size: 6rem !important;
+} */
 .navbar-dark .navbar-nav .nav-link {
   color: var(--light);
 }

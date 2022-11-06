@@ -365,6 +365,12 @@ a:hover {
     font-size: 50% !important;
   }
 
+  /* navbar */
+  .navbar-toggler {
+    margin-right: 5%;
+    font-size: 6rem;
+  }
+
   /* gallery */
   .box-gallery {
     width: 85%;
@@ -472,6 +478,12 @@ a:hover {
   }
   .font-large {
     font-size: 5rem;
+  }
+
+  /* navbar */
+  .navbar-toggler {
+    margin-right: 5% !important;
+    font-size: 3rem !important;
   }
 
   /* gallery */
@@ -592,7 +604,7 @@ a:hover {
     border-radius: 1rem;
   }
   .footer {
-    height: 45vh;
+    height: 55vh;
     flex-direction: column;
     align-items: center;
     order: 2;
