@@ -29,16 +29,16 @@ a:hover {
 .font-large {
   font-family: "Rosario";
   font-weight: 700;
-  font-size: 9.6rem;
-  line-height: 11.6rem;
+  font-size: 6rem;
+  line-height: 7.2rem;
   color: var(--black);
 }
 .font-italic {
   font-family: "Rosario";
   font-style: italic;
   font-weight: 700;
-  font-size: 3.1rem;
-  line-height: 5.8rem;
+  font-size: 1.9rem;
+  line-height: 3.6rem;
   color: var(--black);
 }
 .font-form-name {
@@ -118,13 +118,22 @@ a:hover {
 /* #endregion */
 
 /* #region section services */
-
+.box-service {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--light);
+}
 .left {
   position: relative;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
+  margin-top: 5.8%;
 }
 .left > div {
   position: absolute;
@@ -174,14 +183,19 @@ a:hover {
 
 /* #region section team */
 
-.team-title {
-  margin-top: 3%;
-}
 .box-team {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-around;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--light);
+}
+.team-title {
+  margin-top: 6%;
 }
 .team {
   width: 100%;
@@ -353,279 +367,5 @@ a:hover {
 /* #endregion */
 
 /* #region media */
-
-@media screen and (min-width: 1920px) {
-  html {
-    font-size: 16px !important;
-    width: 1920px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 1686px) {
-  html {
-    font-size: 16px !important;
-  }
-}
-
-@media screen and (max-width: 1175px) {
-  html {
-    font-size: 16px !important;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  html {
-    font-size: 16px !important;
-  }
-
-  /* gallery */
-  .box {
-    justify-content: center;
-    align-items: center;
-  }
-  .box-gallery {
-    width: 85%;
-    height: 90%;
-    display: grid;
-    grid-template-columns: 49% 49%;
-    grid-template-rows: 51% 46%;
-    row-gap: 3%;
-    column-gap: 2%;
-  }
-  .gallery-box-one {
-    width: 100%;
-    order: 1;
-    animation: box-two 1s linear 1 forwards;
-  }
-  .gallery-box-two {
-    width: 68%;
-    justify-self: flex-end;
-    order: 3;
-    animation: box-two 0.8s linear 1 forwards;
-  }
-  .gallery-box-three {
-    width: 68%;
-    justify-self: flex-start;
-    order: 4;
-    animation: box-one 0.8s linear 1 forwards;
-  }
-  .gallery-box-four {
-    width: 100%;
-    order: 2;
-    animation: box-one 1s linear 1 forwards;
-  }
-
-  /* services */
-  .box-service {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .left {
-    width: 79.8%;
-    height: 50%;
-    align-self: center;
-    order: 2;
-  }
-  .right {
-    width: 100%;
-    height: 50%;
-    background: url("../img/pexels-cottonbro.png") 0 40%/100% no-repeat;
-    order: 1;
-  }
-
-  /* team */
-  .box-team {
-    justify-content: space-evenly;
-  }
-  .team {
-    width: 60%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    justify-items: center;
-  }
-  .team-card {
-    width: 90%;
-    margin-top: 10%;
-  }
-
-  /* contact */
-  .feedback {
-    /* height: 225rem; */
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .form-box {
-    width: 60%;
-    height: 87rem;
-    margin: 0 0 0 0;
-    order: 1;
-  }
-  .form-title {
-    width: 100%;
-  }
-  .form {
-    height: 78%;
-  }
-  .footer {
-    height: 90rem;
-    flex-direction: column;
-    align-items: center;
-    order: 2;
-  }
-  .map {
-    order: 3;
-  }
-  .worktime-item {
-    margin: 0 0 3% 0;
-  }
-  nav {
-    order: 3;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 16px !important;
-  }
-
-  /* gallery */
-  .box {
-    height: 100%;
-    overflow: visible;
-    padding-bottom: 2%;
-  }
-  .box-gallery {
-    width: 24%;
-    height: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: none;
-    row-gap: 0;
-    column-gap: 0;
-  }
-  .box-gallery > div {
-    width: 100%;
-    margin-top: 10%;
-  }
-  .gallery-box-two > img:first-child,
-  .gallery-box-three > img:first-child {
-    animation: box-two 0.8s linear 1 forwards;
-    margin-bottom: 10%;
-  }
-  .gallery-box-two > img:last-child,
-  .gallery-box-three > img:last-child {
-    animation: box-one 0.8s linear 1 forwards;
-  }
-  .gallery-box-one {
-    order: 1;
-    animation: box-one 0.8s linear 1 forwards;
-  }
-  .gallery-box-two {
-    order: 2;
-    animation: none;
-  }
-  .gallery-box-three {
-    order: 3;
-    animation: none;
-  }
-  .gallery-box-four {
-    order: 4;
-    animation: box-two 0.8s linear 1 forwards;
-  }
-
-  /* serbices */
-  .box-service {
-    height: 100vh;
-    justify-content: center;
-  }
-  .left {
-    width: 83.7%;
-  }
-  .right {
-    display: none;
-  }
-
-  /* team */
-  .box-team {
-    height: 100%;
-    overflow: visible;
-    padding-bottom: 20%;
-  }
-  .team-title {
-    font-size: 6.6rem;
-    text-align: center;
-    margin: 10% 0;
-  }
-  .team {
-    grid-template-columns: 100%;
-    grid-template-rows: none;
-    row-gap: 0;
-  }
-  .team-card {
-    margin-top: 20%;
-  }
-  .team:hover .team-card {
-    filter: none;
-  }
-
-  /* contact */
-  .feedback {
-    height: 100%;
-    overflow: visible;
-    padding-top: 10%;
-  }
-  .form-box {
-    width: 100%;
-    margin: 0 0 0 0;
-    order: 3;
-  }
-  .form-title {
-    width: 100%;
-    height: 62%;
-    font-size: 5.1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--gray);
-    margin-bottom: 0;
-  }
-  .form {
-    height: 76rem;
-    grid-template-rows: 15% 15% 50%;
-    grid-template-columns: none;
-    padding: 0% 12% 12% 12%;
-  }
-  .form-field {
-    border-radius: 1rem;
-  }
-  .form-field-textarea {
-    height: 33rem;
-    grid-column: 1;
-    border-radius: 1rem;
-  }
-  .footer {
-    height: 90rem;
-    flex-direction: column;
-    align-items: center;
-    order: 2;
-  }
-  .map {
-    order: 1;
-  }
-  .worktime-item {
-    margin: 0 0 3% 0;
-  }
-  nav {
-    order: 1;
-  }
-  .worktime {
-    order: 3;
-  }
-  .cosial {
-    order: 2;
-  }
-}
 
 /* #endregion */
