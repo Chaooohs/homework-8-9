@@ -28,14 +28,11 @@ a:hover {
 
 .box {
   width: 100%;
-  /* min-height: 90vh; */
+  min-height: 90vh;
   display: flex;
   justify-content: space-evenly;
   box-sizing: border-box;
   background-color: var(--light);
-  /* //////// */
-  min-height: 100vh;
-  padding-top: 10vh;
 }
 .font-large {
   font-family: "Rosario";
@@ -254,12 +251,6 @@ a:hover {
   box-sizing: border-box;
   align-items: flex-end;
 }
-
-.feedback {
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-end;
-}
 .form-box {
   width: 50%;
   height: 37.5rem;
@@ -267,7 +258,7 @@ a:hover {
 }
 .form-title {
   width: 90%;
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   line-height: 4.8rem;
   text-align: center;
   margin-bottom: 3%;
@@ -360,15 +351,29 @@ a:hover {
 
 /* #region media */
 
-@media screen and (max-width: 1619px) {
+@media screen and (min-width: 1920px) {
   html {
-    font-size: 50% !important;
+    font-size: 100% !important;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1620px) {
+  html {
+    font-size: 84% !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 53% !important;
   }
 }
 
 @media screen and (max-width: 992px) {
   html {
-    font-size: 50% !important;
+    font-size: 51.6% !important;
   }
 
   /* navbar */
@@ -380,10 +385,10 @@ a:hover {
   }
   .navbar-toggler {
     margin-left: 5%;
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .nav-link {
-    font-size: 3.2rem;
+    font-size: 2.7rem;
     line-height: 4.7rem;
     margin-left: 7%;
     margin-bottom: 3%;
@@ -490,16 +495,14 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 50% !important;
-  }
+  
   .font-large {
     font-size: 5rem;
   }
 
   /* navbar */
   .navbar-toggler {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .nav-link {
     font-size: 2.2rem;
