@@ -466,4 +466,141 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50% !important;
+  }
+
+  /* gallery */
+  
+  .box-gallery {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    padding: 0;
+  }
+  .box-gallery > div {
+    width: 100%;
+    margin-top: 10%;
+  }
+  .gallery-box-two > img:first-child,
+  .gallery-box-three > img:first-child {
+    animation: box-two 0.8s linear 1 forwards;
+    margin-bottom: 10%;
+  }
+  .gallery-box-two > img:last-child,
+  .gallery-box-three > img:last-child {
+    animation: box-one 0.8s linear 1 forwards;
+  }
+  .gallery-box-one {
+    order: 1;
+    animation: box-one 0.8s linear 1 forwards;
+  }
+  .gallery-box-two {
+    order: 2;
+    animation: none;
+  }
+  .gallery-box-three {
+    order: 3;
+    animation: none;
+  }
+  .gallery-box-four {
+    order: 4;
+    animation: box-two 0.8s linear 1 forwards;
+  }
+
+  /* serbices */
+  .box-service {
+    height: 100vh;
+    justify-content: center;
+  }
+  .left {
+    width: 83.7%;
+  }
+  .right {
+    display: none;
+  }
+
+  /* team */
+  .box-team {
+    height: 100%;
+    overflow: visible;
+    padding-bottom: 20%;
+  }
+  .team-title {
+    font-size: 6.6rem;
+    text-align: center;
+    margin: 10% 0;
+  }
+  .team {
+    grid-template-columns: 100%;
+    grid-template-rows: none;
+    row-gap: 0;
+  }
+  .team-card {
+    margin-top: 20%;
+  }
+  .team:hover .team-card {
+    filter: none;
+  }
+
+  /* contact */
+  .feedback {
+    height: 100%;
+    overflow: visible;
+    padding-top: 10%;
+  }
+  .form-box {
+    width: 100%;
+    margin: 0 0 0 0;
+    order: 3;
+  }
+  .form-title {
+    width: 100%;
+    height: 62%;
+    font-size: 5.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray);
+    margin-bottom: 0;
+  }
+  .form {
+    height: 76rem;
+    grid-template-rows: 15% 15% 50%;
+    grid-template-columns: none;
+    padding: 0% 12% 12% 12%;
+  }
+  .form-field {
+    border-radius: 1rem;
+  }
+  .form-field-textarea {
+    height: 33rem;
+    grid-column: 1;
+    border-radius: 1rem;
+  }
+  .footer {
+    height: 90rem;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+  }
+  .map {
+    order: 1;
+  }
+  .worktime-item {
+    margin: 0 0 3% 0;
+  }
+  nav {
+    order: 1;
+  }
+  .worktime {
+    order: 3;
+  }
+  .cosial {
+    order: 2;
+  }
+}
+
 /* #endregion */
