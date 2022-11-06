@@ -12,7 +12,7 @@
   --gray: #e5e5e5;
 }
 html {
-  font-size: 16px !important;
+  font-size: 100% !important;
 }
 body {
   margin: 0;
@@ -24,7 +24,6 @@ a:hover {
   color: var(--black);
 }
 
-
 /* #region common */
 
 .box {
@@ -33,7 +32,6 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
   box-sizing: border-box;
-  overflow: hidden;
   background-color: var(--light);
 }
 .font-large {
@@ -177,7 +175,6 @@ a:hover {
 
 .box-team {
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
 }
 .team {
@@ -264,7 +261,7 @@ a:hover {
 }
 .form-title {
   width: 90%;
-  font-size: 4rem;
+  font-size: 3.8rem;
   line-height: 4.8rem;
   text-align: center;
   margin-bottom: 3%;
@@ -356,5 +353,117 @@ a:hover {
 /* #endregion */
 
 /* #region media */
+
+@media screen and (max-width: 1619px) {
+  html {
+    font-size: 50% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 50% !important;
+  }
+
+  /* gallery */
+  .box-gallery {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 54% 46%;
+    /* row-gap: 3%; */
+    column-gap: 2%;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  .gallery-box-one {
+    width: 100%;
+    order: 1;
+    animation: box-two 1s linear 1 forwards;
+  }
+  .gallery-box-two {
+    width: 68%;
+    justify-self: flex-end;
+    order: 3;
+    animation: box-two 0.8s linear 1 forwards;
+  }
+  .gallery-box-three {
+    width: 68%;
+    justify-self: flex-start;
+    order: 4;
+    animation: box-one 0.8s linear 1 forwards;
+  }
+  .gallery-box-four {
+    width: 100%;
+    order: 2;
+    animation: box-one 1s linear 1 forwards;
+  }
+
+  /* services */
+  .box-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .left {
+    width: 70%;
+    height: 45vh;
+    align-self: center;
+    order: 2;
+  }
+  .right {
+    width: 100%;
+    height: 45vh;
+    order: 1;
+  }
+  .left > div {
+    height: 50%;
+  }
+
+  /* team */
+  .team {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+  }
+  .team-card {
+    width: 90%;
+    margin-top: 10%;
+  }
+
+  /* contact */
+  .box-contact {
+    align-items: center;
+  }
+  .form-box {
+    width: 60%;
+    height: 32.5vh;
+    margin: 0 0 0 0;
+    order: 1;
+  }
+  .form-title {
+    width: 100%;
+  }
+  .form {
+    height: 76%;
+  }
+  .footer {
+    /* height: 90rem; */
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+  }
+  .map {
+    order: 3;
+  }
+  .worktime-item {
+    margin: 0 0 3% 0;
+  }
+  nav {
+    order: 3;
+  }
+}
 
 /* #endregion */
