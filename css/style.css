@@ -470,6 +470,9 @@ a:hover {
   html {
     font-size: 50% !important;
   }
+  .font-large {
+    font-size: 5rem;
+  }
 
   /* gallery */
   
@@ -518,6 +521,10 @@ a:hover {
   .left {
     width: 83.7%;
   }
+  .left > div > div > p {
+    line-height: 2rem;
+    margin-top: 8%;
+  }
   .right {
     display: none;
   }
@@ -527,6 +534,9 @@ a:hover {
     height: 100%;
     overflow: visible;
     padding-bottom: 20%;
+  }
+  .box-team > div:first-of-type {
+    text-align: center;
   }
   .team-title {
     font-size: 6.6rem;
@@ -559,12 +569,13 @@ a:hover {
   .form-title {
     width: 100%;
     height: 62%;
-    font-size: 5.1rem;
+    font-size: 2.9rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--gray);
     margin-bottom: 0;
+    padding: 0 5%;
   }
   .form {
     height: 76rem;
@@ -581,12 +592,14 @@ a:hover {
     border-radius: 1rem;
   }
   .footer {
-    height: 90rem;
+    height: 45vh;
     flex-direction: column;
     align-items: center;
     order: 2;
   }
   .map {
+    width: 35.5rem;
+    height: 35.5rem;
     order: 1;
   }
   .worktime-item {
