@@ -366,8 +366,14 @@ a:hover {
   }
 
   /* navbar */
+  .navbar {
+    flex-direction: row-reverse;
+  }
+  .navbar-brand {
+    margin: 0;
+  }
   .navbar-toggler {
-    margin-right: 5%;
+    margin-left: 5%;
     font-size: 6rem;
   }
 
@@ -482,12 +488,10 @@ a:hover {
 
   /* navbar */
   .navbar-toggler {
-    margin-right: 5% !important;
-    font-size: 3rem !important;
-  }
+    font-size: 3rem;
+  } 
 
   /* gallery */
-  
   .box-gallery {
     width: 26%;
     display: flex;
@@ -602,6 +606,9 @@ a:hover {
     height: 33rem;
     grid-column: 1;
     border-radius: 1rem;
+  }
+  .form-input-textarea {
+    padding: 3%;
   }
   .footer {
     height: 55vh;
