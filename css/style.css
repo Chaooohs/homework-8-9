@@ -24,8 +24,18 @@ a:hover {
   color: var(--black);
 }
 
+
 /* #region common */
 
+.box {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--light);
+}
 .font-large {
   font-family: "Rosario";
   font-weight: 700;
@@ -37,7 +47,7 @@ a:hover {
   font-family: "Rosario";
   font-style: italic;
   font-weight: 700;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   line-height: 3.6rem;
   color: var(--black);
 }
@@ -76,15 +86,6 @@ a:hover {
 
 /* #region gallery */
 
-.box-gallery {
-  width: 100%;
-  min-height: 90vh;
-  display: flex;
-  justify-content: space-evenly;
-  box-sizing: border-box;
-  overflow: hidden;
-  background-color: red;
-}
 .gallery-box-one {
   width: 19%;
   align-self: center;
@@ -106,7 +107,7 @@ a:hover {
 }
 .gallery-box-two > img:first-child,
 .gallery-box-three > img:first-child {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3%;
 }
 .gallery-box-four {
   width: 19%;
@@ -117,15 +118,7 @@ a:hover {
 /* #endregion */
 
 /* #region section services */
-.box-service {
-  width: 100%;
-  min-height: 90vh;
-  display: flex;
-  justify-content: space-evenly;
-  box-sizing: border-box;
-  overflow: hidden;
-  background-color: green;
-}
+
 .left {
   position: relative;
   width: 50%;
@@ -183,15 +176,9 @@ a:hover {
 /* #region section team */
 
 .box-team {
-  width: 100%;
-  min-height: 90vh;
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-sizing: border-box;
-  overflow: hidden;
-  background-color: brown;
 }
 .team {
   width: 100%;
@@ -244,7 +231,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4.8rem;
+  font-size: 3rem;
   overflow: hidden;
   background-color: rgba(163, 83, 10, 0.8);
   border-radius: 0% 0% 11% 11%/0% 0% 22% 22%;
@@ -259,15 +246,10 @@ a:hover {
 /* #region section contact */
 
 .box-contact {
-  width: 100%;
-  min-height: 90vh;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
   align-items: flex-end;
-  overflow: hidden;
-  background-color: yellowgreen;
 }
 
 .feedback {

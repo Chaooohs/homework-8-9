@@ -10,7 +10,7 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  padding: 0 1rem 0 0;
+  padding: 0;
 }
 .bg-dark {
   background: var(--black) !important;
@@ -24,11 +24,15 @@
 .navbar-dark .navbar-nav .nav-link {
   color: var(--light);
 }
+.navbar-nav {
+  width: 64%;
+  justify-content: space-around;
+}
 .nav-link {
   font-family: "Rosario";
   font-style: italic;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   line-height: 2.7rem;
 }
 .navbar-collapse {
