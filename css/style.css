@@ -388,6 +388,7 @@ a:hover {
   .navbar {
     position: fixed;
     flex-direction: row-reverse;
+    width: 100vw;
   }
   .navbar-brand {
     margin: 0;
@@ -646,6 +647,7 @@ a:hover {
   .form-input-textarea {
     font-size: 1.7rem;
     padding: 0% 6%;
+    color: var(--black);
   }
   .footer {
     height: 55vh;
