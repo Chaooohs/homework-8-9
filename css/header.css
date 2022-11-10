@@ -7,7 +7,6 @@
 
 .navbar {
   position: sticky;
-  /* position: fixed; */
   top: 0;
   z-index: 1;
   width: 100%;
@@ -21,7 +20,7 @@
   height: 10vh;
 }
 .navbar-brand > img {
-  height: 102%;
+  height: 100%;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: var(--light);

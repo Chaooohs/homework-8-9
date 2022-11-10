@@ -16,6 +16,7 @@ html {
 }
 body {
   margin: 0;
+  background-color: var(--light);
 }
 img {
   width: 100%;
@@ -85,7 +86,6 @@ a:hover {
 /* #region gallery */
 
 .gallery-box-one {
-  background-color: var(--light);
   width: 19%;
   align-self: center;
   animation: box-one 2s linear 1 forwards;
@@ -175,7 +175,6 @@ a:hover {
 /* #region section team */
 
 .box-team {
-  background-color: var(--light);
   flex-direction: column;
   align-items: center;
 }
@@ -245,7 +244,6 @@ a:hover {
 /* #region section contact */
 
 .box-contact {
-  background-color: var(--light);
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
@@ -373,9 +371,14 @@ a:hover {
   html {
     font-size: 51.6% !important;
   }
+  .box {
+    margin-top: 10vh;
+  }
+
 
   /* navbar */
   .navbar {
+    position: fixed;
     flex-direction: row-reverse;
   }
   .navbar-brand {
@@ -400,7 +403,7 @@ a:hover {
     grid-template-rows: 1.2fr 1fr;
     /* row-gap: 3%; */
     column-gap: 2%;
-    margin: 0 auto;
+    margin: 10vh auto 0;
   }
   .gallery-box-one {
     width: 100%;
@@ -571,7 +574,7 @@ a:hover {
     margin: 10% 0;
   }
   .team {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: none;
     row-gap: 0;
   }
@@ -590,8 +593,9 @@ a:hover {
   }
   .form-title {
     width: 100%;
-    height: 62%;
+    height: 16rem;
     font-size: 2.9rem;
+    /* line-height: 3.8rem; */
     display: flex;
     align-items: center;
     justify-content: center;
