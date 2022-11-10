@@ -23,6 +23,7 @@ img {
 }
 a:hover {
   color: var(--black);
+  text-decoration: none;
 }
 
 /* #region common */
