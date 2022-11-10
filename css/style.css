@@ -381,6 +381,7 @@ a:hover {
   .navbar {
     position: fixed;
     flex-direction: row-reverse;
+    width: 100vw;
   }
   .navbar-brand {
     margin: 0;
