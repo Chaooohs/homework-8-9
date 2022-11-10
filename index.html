@@ -123,13 +123,15 @@
       </div>
       <div class="form">
         <div class="form-field">
-          <input class="form-input font-contactTable" type="text" placeholder="Name">
+          <input class="form-input font-contactTable" type="text" placeholder="Name *">
         </div>
         <div class="form-field">
-          <input class="form-input font-contactTable" type="email" placeholder="Email">
+          <input class="form-input font-contactTable" type="email" placeholder="Email *">
         </div>
+        <span class="separator font-italic"> * Required field </span>
         <div class="form-field-textarea">
-          <textarea class="form-input-textarea font-contactTable" placeholder="Message"></textarea>
+          <label class="label font-contactTable" for="mess"> Message </label>
+          <textarea class="form-input-textarea font-contactTable" placeholder="Message" id="mess"></textarea>
         </div>
       </div>
     </div>
