@@ -440,22 +440,22 @@ a:hover {
   .gallery-box-one {
     justify-self: center;
     order: 1;
-    animation: box-two 1s linear 1 forwards;
+    animation: b 1s linear 1 forwards;
   }
   .gallery-box-two {
     justify-self: flex-end;
     order: 2;
-    animation: box-one 0.8s linear 1 forwards;
+    animation: a 0.8s linear 1 forwards;
   }
   .gallery-box-three {
     justify-self: flex-start;
     order: 3;
-    animation: box-two 0.8s linear 1 forwards;
+    animation: b 0.8s linear 1 forwards;
   }
   .gallery-box-four {
     justify-self: center;
     order: 4;
-    animation: box-one 1s linear 1 forwards;
+    animation: a 1s linear 1 forwards;
   }
 
   /* services */
@@ -552,17 +552,21 @@ a:hover {
 
   /* gallery */
 
-  .gallery-box-two > img:first-child,
-  .gallery-box-three > img:first-child {
-    animation: box-two 0.8s linear 1 forwards;
+  .gallery-box-two > img:first-child {
+    animation: d 1s linear 1 forwards;
   }
-  .gallery-box-two > img:last-child,
+  .gallery-box-two > img:last-child {
+    animation: c 1.15s linear 1 forwards;
+  }
+  .gallery-box-three > img:first-child {
+    animation: g 1.2s linear 1 forwards;
+  }
   .gallery-box-three > img:last-child {
-    animation: box-one 0.8s linear 1 forwards;
+    animation: e 1.1s linear 1 forwards;
   }
   .gallery-box-one {
     order: 1;
-    animation: box-one 0.8s linear 1 forwards;
+    animation: b 0.8s linear 1 forwards;
   }
   .gallery-box-two {
     order: 2;
@@ -574,7 +578,7 @@ a:hover {
   }
   .gallery-box-four {
     order: 4;
-    animation: box-two 0.8s linear 1 forwards;
+    animation: a 0.9s linear 1 forwards;
   }
 
   /* serbices */

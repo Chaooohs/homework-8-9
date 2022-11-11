@@ -1,4 +1,4 @@
-@keyframes box-one {
+@keyframes a {
   from {
     transform: translateX(-100vw);
   }
@@ -6,9 +6,41 @@
     transform: translateX(0);
   }
 }
-@keyframes box-two {
+@keyframes b {
   from {
     transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes c {
+  from {
+    transform: translate(-100vw, -100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes d {
+  from {
+    transform: translate(-100vw, 100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes e {
+  from {
+    transform: translate(100vw, -100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes g {
+  from {
+    transform: translate(100vw, 100vw);
   }
   to {
     transform: translateX(0);
