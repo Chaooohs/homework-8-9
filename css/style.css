@@ -339,19 +339,19 @@ a:hover {
   font-size: 2.2rem;
   line-height: 4.4rem;
 }
-.cosial {
+.social {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contact-footer-cosial__item {
+.contact-footer-social__item {
   margin: 3.5% 0 0 0;
 }
-.contact-footer-cosial__list {
+.contact-footer-social__list {
   width: 65%;
   text-align: left;
 }
-.contact-footer-cosial-icon {
+.contact-footer-social-icon {
   width: 1.6rem;
   height: 1.6rem;
   color: var(--black);
@@ -678,7 +678,7 @@ a:hover {
   .worktime {
     order: 3;
   }
-  .cosial {
+  .social {
     order: 2;
   }
 }
