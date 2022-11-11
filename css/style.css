@@ -411,34 +411,50 @@ a:hover {
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.2fr 1fr;
-    row-gap: 8rem;
-    column-gap: 3%;
-    padding: 7rem 0 6rem 0;
+    grid-template-rows: 1fr 1fr;
     margin-top: 10vh;
   }
+
+
+  .box-gallery > div {
+    width: 100%;
+    height: 100%;
+  }
+  .box-gallery > div > img {
+    border-radius: 0;
+  }
+  .gallery-box-one  img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .gallery-box-four  img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .gallery-box-two > img:first-child,
+  .gallery-box-three > img:first-child {
+    margin-bottom: 0;
+  }
+
+
   .gallery-box-one {
-    width: 80%;
     justify-self: center;
     order: 1;
     animation: box-two 1s linear 1 forwards;
   }
   .gallery-box-two {
-    width: 60%;
     justify-self: flex-end;
+    order: 2;
+    animation: box-one 0.8s linear 1 forwards;
+  }
+  .gallery-box-three {
+    justify-self: flex-start;
     order: 3;
     animation: box-two 0.8s linear 1 forwards;
   }
-  .gallery-box-three {
-    width: 60%;
-    justify-self: flex-start;
-    order: 4;
-    animation: box-one 0.8s linear 1 forwards;
-  }
   .gallery-box-four {
-    width: 80%;
     justify-self: center;
-    order: 2;
+    order: 4;
     animation: box-one 1s linear 1 forwards;
   }
 
@@ -449,6 +465,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
+    margin-top: 1px;
   }
   .left {
     width: 50rem;
@@ -535,55 +552,9 @@ a:hover {
 
   /* gallery */
 
-  .box-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 0;
-    column-gap: 0;
-    padding: 7rem 0 6rem 0;
-    margin-top: 10vh;
-  }
-  .gallery-box-one {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .gallery-box-two  {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .gallery-box-three {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .gallery-box-four {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-
-  .box-gallery > div {
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-  }
-  .box-gallery > div > img {
-    border-radius: 0;
-  }
-  .gallery-box-one  img {
-    object-fit: cover;
-    height: 100%;
-  }
-  .gallery-box-four  img {
-    object-fit: cover;
-    height: 100%;
-  }
-
-
   .gallery-box-two > img:first-child,
   .gallery-box-three > img:first-child {
     animation: box-two 0.8s linear 1 forwards;
-    margin-bottom: 0;
   }
   .gallery-box-two > img:last-child,
   .gallery-box-three > img:last-child {
@@ -608,6 +579,9 @@ a:hover {
 
   /* serbices */
 
+  .box-service {
+    margin-top: 6rem;
+  }
   .left > div > div > p {
     line-height: 2rem;
     margin-top: 8%;
