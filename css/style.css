@@ -13,6 +13,9 @@
 }
 html {
   font-size: 100% !important;
+
+  max-width: 1920px;
+  margin: 0 auto;
 }
 body {
   margin: 0;
@@ -23,10 +26,6 @@ img {
 a:hover {
   color: var(--black);
   text-decoration: none;
-}
-.box {
-  overflow: hidden;
-  background: var(--light);
 }
 
 /* #region fonts */
@@ -86,6 +85,9 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
   box-sizing: border-box;
+  background: var(--light);
+  
+  overflow: hidden;
 }
 .gallery-box-one {
   width: 19%;
@@ -127,6 +129,7 @@ a:hover {
   min-height: 90vh;
   display: flex;
   box-sizing: border-box;
+  background: var(--light);
 }
 .left {
   position: relative;
@@ -177,7 +180,8 @@ a:hover {
 .right {
   width: 50%;
   height: 90vh;
-  background: url("../img/services/pexels-cottonbro.png") center / cover no-repeat;
+  background: url("../img/services/pexels-cottonbro.png") center / cover
+    no-repeat;
 }
 
 /* #endregion */
@@ -191,6 +195,7 @@ a:hover {
   justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
+  background: var(--light);
 }
 .team {
   width: 100%;
@@ -264,6 +269,7 @@ a:hover {
   justify-content: center;
   box-sizing: border-box;
   align-items: flex-end;
+  background: var(--light);
 }
 .form-box {
   width: 50%;
@@ -417,7 +423,6 @@ a:hover {
     grid-template-rows: 1fr 1fr;
   }
 
-
   .box-gallery > div {
     width: 100%;
     height: 100%;
@@ -425,11 +430,11 @@ a:hover {
   .box-gallery > div > img {
     border-radius: 0;
   }
-  .gallery-box-one  img {
+  .gallery-box-one img {
     object-fit: cover;
     height: 100%;
   }
-  .gallery-box-four  img {
+  .gallery-box-four img {
     object-fit: cover;
     height: 100%;
   }
@@ -437,7 +442,6 @@ a:hover {
   .gallery-box-three > img:first-child {
     margin-bottom: 0;
   }
-
 
   .gallery-box-one {
     justify-self: center;
@@ -694,12 +698,10 @@ a:hover {
 }
 
 @media (max-width: 450px) {
-
   .left {
     width: 30rem;
     height: 30rem;
   }
-
 }
 
 /* #endregion */
