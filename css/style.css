@@ -115,6 +115,9 @@ a:hover {
   align-self: center;
   animation: box-two 2s linear 1 forwards;
 }
+.box-gallery > div > img {
+  border-radius: 30px;
+}
 
 /* #endregion */
 
@@ -174,7 +177,7 @@ a:hover {
 .right {
   width: 50%;
   height: 90vh;
-  background: url("../img/pexels-cottonbro.png") center / cover no-repeat;
+  background: url("../img/services/pexels-cottonbro.png") center / cover no-repeat;
 }
 
 /* #endregion */
@@ -412,6 +415,7 @@ a:hover {
     row-gap: 8rem;
     column-gap: 3%;
     padding: 7rem 0 6rem 0;
+    margin-top: 10vh;
   }
   .gallery-box-one {
     width: 80%;
@@ -532,19 +536,54 @@ a:hover {
   /* gallery */
 
   .box-gallery {
-    width: 26%;
-    display: flex;
-    flex-direction: column;
-    justify-content: normal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0;
+    column-gap: 0;
+    padding: 7rem 0 6rem 0;
+    margin-top: 10vh;
   }
+  .gallery-box-one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .gallery-box-two  {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .gallery-box-three {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .gallery-box-four {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+
   .box-gallery > div {
     width: 100%;
-    margin-top: 10%;
+    height: 100%;
+    margin-top: 0;
   }
+  .box-gallery > div > img {
+    border-radius: 0;
+  }
+  .gallery-box-one  img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .gallery-box-four  img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+
   .gallery-box-two > img:first-child,
   .gallery-box-three > img:first-child {
     animation: box-two 0.8s linear 1 forwards;
-    margin-bottom: 10%;
+    margin-bottom: 0;
   }
   .gallery-box-two > img:last-child,
   .gallery-box-three > img:last-child {
