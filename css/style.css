@@ -284,6 +284,7 @@ a:hover {
 }
 
 /* form */
+
 .form {
   display: grid;
   grid-template-columns: 1.1fr 1.5fr;
@@ -329,7 +330,9 @@ a:hover {
 }
 
 /* footer */
+
 .footer {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
