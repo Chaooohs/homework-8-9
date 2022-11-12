@@ -390,6 +390,9 @@ a:hover {
   html {
     font-size: 51.6% !important;
   }
+  body {
+    padding-top: 10vh;
+  }
 
   /* navbar */
 
@@ -413,9 +416,6 @@ a:hover {
 
   /* gallery */
 
-  .cover {
-    margin-top: 10vh;
-  }
   .box-gallery {
     min-height: 100%;
     display: grid;
