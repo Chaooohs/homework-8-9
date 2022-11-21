@@ -421,6 +421,9 @@ a:hover {
   /* gallery */
 
   .box-gallery {
+    min-height: 100%;
+  }
+  .box-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -560,9 +563,6 @@ a:hover {
 
   /* gallery */
 
-  .box-gallery {
-    height: 100%;
-  }
   .gallery-box-two > img:first-child {
     animation: d 1s linear 1 forwards;
   }
